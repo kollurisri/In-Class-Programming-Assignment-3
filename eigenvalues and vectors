@@ -1,0 +1,12 @@
+import numpy as np
+
+#define the square array
+a = np.array([[3, -2], [1, 0]])
+
+#compute the eigenvalues and right eigenvectors
+eigenvalues, eigenvectors = np.linalg.eig(a)
+
+#print the eigenvalues and right eigenvectors
+print("Eigenvalues:", eigenvalues)
+print("Right eigenvectors:")
+print(eigenvectors)
