@@ -1,0 +1,16 @@
+import numpy as np
+x = np.random.randint(1,20, size = 15)
+print (x)
+#Reshape the array to 3 by 5
+y=x.reshape(3,5)
+print(y)
+#Print array shape.
+print("array is :",y)
+print ("array shape is:",y.shape)
+#Replace the max in each row by 0
+new_a = np.where(y == [
+    [i]
+    for i in np.amax(y, axis = 1)
+], 0, y)
+
+print(new_a)
