@@ -1,0 +1,13 @@
+import numpy as np
+
+#define the original array
+arr = np.array([[1, 2], [3, 4], [5, 6]])
+
+#reshape to 3x2
+arr_3x2 = arr.reshape(3, 2)
+
+#reshape to 2x3
+arr_2x3 = arr.reshape(2, 3)
+
+print("Reshaped to 3x2:\n", arr_3x2)
+print("Reshaped to 2x3:\n", arr_2x3)
